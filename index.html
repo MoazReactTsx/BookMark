@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Quote</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Frijole&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <script src="./src/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./src/css/global.css">
+    <script src="https://kit.fontawesome.com/92c7a83d65.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <main class="main">
+        <!-- container -->
+        <div class="container">
+            <!-- page title -->
+            <div class="page-title">
+                <h2>BookMark</h2>
+            </div>
+            <hr>
+            <!-- form -->
+            <form onsubmit="submitForm(event)">
+
+
+                <!-- inputs-row -->
+                <div class="row">
+                    <!-- website name col -inp -->
+                    <div class="col col-6">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Website name</span>
+                            <input type="text" class="form-control" id="websiteName" required />
+                        </div>
+                    </div>
+                    <!-- website url col -inp -->
+                    <div class="col col-6">
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1">Website URL</span>
+                            <input type="text" class="form-control" id="websiteUrl" required />
+                        </div>
+                    </div>
+                    <!-- buttons -->
+                    <div class="col col-12">
+                        <div class="btn-container mx-auto" style="width: fit-content;">
+                            <button class="btn btn-primary" id="addBookmark">
+                                submit
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+            <!-- marks table  row -->
+             <br>
+             <br>
+            <div class="row">
+                <div class="col col-12">
+                    <table class="table table-striped table-dark">
+                        <thead>
+                            <tr>
+                                <th scope="col">Website Name</th>
+                                <th scope="col">Website URL</th>
+                                <th scope="col">Vist</th>
+                                <th scope="col">Update</th>
+                                <th scope="col">Delete</th>
+                            </tr>
+                        </thead>
+                        <tbody id="marksTable">
+
+                        </tbody>
+                        <!-- trah icon -->
+                        <!-- <i class="fa-solid fa-trash-can"></i> -->
+                    </table>
+                </div>
+            </div>
+
+    </main>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>
