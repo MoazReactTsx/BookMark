@@ -72,12 +72,12 @@ function setBookmarks() {
                 </a>
             </td>
             <td>
-                <button class="btn btn-warning" onclick="editBookmark(${index})">
+                <button class="btn btn-warning" onclick="editBookmark(${_})">
                     <i class="fa-solid fa-pen-to-square"></i>
                 </button>
             </td>
             <td>
-                <button class="btn btn-danger" onclick="deleteBookmark(${index})">
+                <button class="btn btn-danger" onclick="deleteBookmark(${_})">
                     <i class="fa-solid fa-trash-can"></i>
                 </button>
             </td>
